@@ -18,7 +18,7 @@ a{
 
     <header>
       <div class="container">
-        <h1 onclick="location.href='/'">{{ site.title | default: site.github.repository_name }}</h1>
+        <h1 onclick="location.href='/'" style="cursor: pointer">{{ site.title | default: site.github.repository_name }}</h1>
         <h2>{{ site.description | default: site.github.project_tagline }}</h2>
 
         <section id="downloads">
@@ -41,8 +41,9 @@ a{
 
     <div class="container">
       <section id="custom_footer">
+        <h1>Posts</h1>
         {% for post in site.posts %}
-          <h2><a href="{{ post.url }}">{{ post.date | date: '%B %d, %Y' }} {{ post.title }}</a></h2>
+          <h6 onclick="location.href='{{ post.url }}'">{{ post.date | date: '%B %d, %Y' }} {{ post.title }}</h6>
         {% endfor %}
       </section>
     </div>
