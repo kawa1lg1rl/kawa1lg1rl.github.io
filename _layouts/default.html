@@ -48,7 +48,9 @@ a{
           <tbody>
             <!-- if문 도는 횟수 체크하기 위해 변수 선언 -->
             {% assign count = 0 %}
-            {% for post in reverse site.posts %}
+            {% assign sorted-posts = site.posts | sort: 'date' | reverse %}
+            {% assign featured-posts = sorted-posts | where_exp:"post","post.featured" %}
+            {% for post in featured-posts %}
               <!-- 전체 포스트의 카테고리가 현재 들어와 있는 페이지의 카테고리와 같은지 판단-->
               {% assign count = count | plus: 1 %}
               <!-- 글의 목록을 최대 3개만 허용 -->
