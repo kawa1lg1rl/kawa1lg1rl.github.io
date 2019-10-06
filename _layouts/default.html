@@ -43,7 +43,7 @@ a{
       <section id="custom_footer">
         <h1>Posts</h1>
         {% for post in site.posts %}
-          <h6 onclick="location.href='{{ post.url }}'">{{ post.date | date: '%B %d, %Y' }} {{ post.title }}</h6>
+          <h5 onclick="location.href='{{ post.url }}'" style="cursor: pointer">{{ post.date | date: '%B %d, %Y' }} {{ post.title }}</h5>
         {% endfor %}
       </section>
     </div>
