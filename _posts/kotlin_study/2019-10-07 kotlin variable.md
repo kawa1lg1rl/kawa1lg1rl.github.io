@@ -1,7 +1,7 @@
 ---
 layout: post
-title: \[Kotlin\] 변수
-categories: kotlin study
+title: [Kotlin] 변수
+categories: kotlin-study
 comments: true
 tags: kotlin variable
 date: 2019-10-08
