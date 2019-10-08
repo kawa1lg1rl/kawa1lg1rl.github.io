@@ -2,6 +2,10 @@
 layout: default
 ---
 <script>
+  
+  console.log("실행됐나")
+  setIndex()
+  
   function setIndex(){
     // 메인컨텐츠 가져와서 헤딩태그 수집
     var main_contents = document.getElementById("main_content")
@@ -95,8 +99,6 @@ layout: default
 
     }
   }
-  console.log("실행됐나")
-  setIndex()
 </script>
 
 <small>{{ page.date | date: "%-d %B %Y" }}</small>
