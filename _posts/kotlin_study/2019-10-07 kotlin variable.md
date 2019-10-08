@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [Kotlin] 변수
+title: Kotlin 변수
 categories: kotlin-study
 comments: true
 tags: kotlin variable
