@@ -59,7 +59,7 @@ s.setAttribute('data-timestamp', +new Date());
       var main_contents = document.getElementById("main_content")
       var allHeadings = main_contents.querySelectorAll("h1, h2, h3, h4, h5, h6")
       var nicknameView = document.getElementsByClassName("view")[0]
-      var customContainer = document.getElementsByClassName("custom_container")[0]
+      // var customContainer = document.getElementsByClassName("custom_container")[0]
 
       // customContainer.style.width = "100%"
       // main_contents.style.width = "100%"
@@ -68,7 +68,7 @@ s.setAttribute('data-timestamp', +new Date());
       if( allHeadings.length > 1 ) {
         // 목차 추가
         var temp_main = document.createElement("div")
-        customContainer.after(temp_main)
+        nicknameView.after(temp_main)
         
         var beforeName = "null"
         var nodes = new Array()
