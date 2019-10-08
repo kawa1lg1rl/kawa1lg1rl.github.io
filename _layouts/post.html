@@ -51,8 +51,8 @@ s.setAttribute('data-timestamp', +new Date());
     }
 
     var x = window.matchMedia("(max-width: 1000px)")
-    myFunction(x) 
-    x.addListener(myFunction) 
+    setContentsLeft(x) 
+    x.addListener(setContentsLeft) 
       // 메인컨텐츠 가져와서 헤딩태그 수집
       var main_contents = document.getElementById("main_content")
       var allHeadings = main_contents.querySelectorAll("h1, h2, h3, h4, h5, h6")
