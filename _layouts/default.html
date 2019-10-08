@@ -19,7 +19,7 @@ a{
     <header>
       <div class="container">
         <h1 onclick="location.href='/'" style="cursor: pointer">{{ site.title | default: site.github.repository_name }}</h1>
-        <h2>{{ site.description | default: site.github.project_tagline }}</h2>
+        <h2 style="margin: 0;">{{ site.description | default: site.github.project_tagline }}</h2>
 
         <section id="downloads">
           {% if site.show_downloads %}
