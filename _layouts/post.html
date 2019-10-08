@@ -40,25 +40,29 @@ s.setAttribute('data-timestamp', +new Date());
 <script>
      
     (function(){
-      
-    function setContentsLeft(x) {
-      if (x.matches) { // If media query matches
-        document.getElementById("main_content").style.left = "300px"
-      } else 
-      {
-        document.getElementById("main_content").style.left = "calc(25% + 50px)"
-      }
-    }
+    //   var customContainer = document.getElementsByClassName("custom_container")[0]
 
-    var x = window.matchMedia("(max-width: 1000px)")
-    setContentsLeft(x) 
-    x.addListener(setContentsLeft) 
+    //   function setContentsLeft(x) {
+    //     if (x.matches) { // If media query matches
+    //       customContainer.style.left = "300px"
+    //       customContainer.style.width = 
+    //     } else 
+    //     {
+    //       customContainer.style.left = "calc(25% + 50px)"
+    //     }
+    //   }
+
+    //   var x = window.matchMedia("(max-width: 1000px)")
+    //   setContentsLeft(x) 
+    // x.addListener(setContentsLeft) 
       // 메인컨텐츠 가져와서 헤딩태그 수집
       var main_contents = document.getElementById("main_content")
       var allHeadings = main_contents.querySelectorAll("h1, h2, h3, h4, h5, h6")
       var nicknameView = document.getElementsByClassName("view")[0]
       var customContainer = document.getElementsByClassName("custom_container")[0]
 
+      // customContainer.style.width = "100%"
+      // main_contents.style.width = "100%"
 
       // 메인컨텐츠에 헤딩이 1개이상일때(제목빼고 더 있을때)
       if( allHeadings.length > 1 ) {

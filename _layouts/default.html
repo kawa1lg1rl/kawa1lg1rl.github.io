@@ -17,28 +17,27 @@ a{
   <body>
 
     <header>
-      <div class="custom_container">
-        <div class="container">
-          <h1 onclick="location.href='/'" style="cursor: pointer">{{ site.title | default: site.github.repository_name }}</h1>
-          <h2 style="margin: 0;">{{ site.description | default: site.github.project_tagline }}</h2>
+      <div class="container">
+        <h1 onclick="location.href='/'" style="cursor: pointer">{{ site.title | default: site.github.repository_name }}</h1>
+        <h2 style="margin: 0;">{{ site.description | default: site.github.project_tagline }}</h2>
 
-          <section id="downloads">
-            {% if site.show_downloads %}
-              <a href="{{ site.github.zip_url }}" class="btn">Download as .zip</a>
-              <a href="{{ site.github.tar_url }}" class="btn">Download as .tar.gz</a>
-            {% endif %}
-          </section>
-        </div>
+        <section id="downloads">
+          {% if site.show_downloads %}
+            <a href="{{ site.github.zip_url }}" class="btn">Download as .zip</a>
+            <a href="{{ site.github.tar_url }}" class="btn">Download as .tar.gz</a>
+          {% endif %}
+        </section>
       </div>
     </header>
 
+    
     <div class="container">
       <section id="main_content">
         {{ content }}
       </section>
     </div>
 
-
+    
 
     <div class="more-posts" style="width:90%; max-width:1000px; margin: 0 auto;">
         <div class="more-category">
