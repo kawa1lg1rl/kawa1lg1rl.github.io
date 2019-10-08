@@ -7,6 +7,7 @@ tags: kotlin variable
 date: 2019-10-08
 author: kawa1lg1rl
 ---
+
 # .
 ## 코틀린 변수
 
