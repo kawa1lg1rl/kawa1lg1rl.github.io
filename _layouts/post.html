@@ -4,9 +4,8 @@ layout: default
 <script>
   
   console.log("실행됐나")
-  setIndex()
   
-  function setIndex(){
+  (function(){
     // 메인컨텐츠 가져와서 헤딩태그 수집
     var main_contents = document.getElementById("main_content")
     var allHeadings = main_contents.querySelectorAll("h1, h2, h3, h4, h5, h6")
@@ -98,7 +97,7 @@ layout: default
       temp_main.append(nodes[0])
 
     }
-  }
+  })()
 </script>
 
 <small>{{ page.date | date: "%-d %B %Y" }}</small>
