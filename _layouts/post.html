@@ -106,7 +106,7 @@ s.setAttribute('data-timestamp', +new Date());
           var name = "inPage_" + count
           aTagBeforeHeading.name = name            
           currentA.href = "#" + name
-          currentA.style.textDecoration = "none"
+          currentA.style.textDecoration = "none"  
   
           currentH4.style.margin = "0px 0px 0px 0px"
           currentH4.style.color = "#e0e0e0"
@@ -129,6 +129,10 @@ s.setAttribute('data-timestamp', +new Date());
   
         temp_main.append(indexString)
         temp_main.append(nodes[0])
+
+        temp_main.style.position = "fixed"
+        temp_main.style.left = "0"
+
   
       }
     })()
