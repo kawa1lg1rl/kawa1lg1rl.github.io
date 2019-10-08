@@ -23,9 +23,24 @@ body {
 /* General & 'Reset' Stuff */
 
 .container {
-  width: 90%;
+  width: calc(75% - 50px);
   max-width: 1000px;
   margin: 0 auto;
+}
+
+.custom_index {
+  min-width: 250px;
+  position: fixed;
+  width: 25%;
+  left: 0;
+  padding-right: 50px;
+}
+
+@media (max-width: 1000px) { 
+ .container {
+   left: 300px;
+   width: calc(100% - 300px)
+ }
 }
 
 section {
