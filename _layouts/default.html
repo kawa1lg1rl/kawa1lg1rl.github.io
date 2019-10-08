@@ -50,16 +50,18 @@ a{
             {% assign work_items = site.posts | sort: 'date' | reverse %}
             {% for post in work_items %}
               <!-- 전체 포스트의 카테고리가 현재 들어와 있는 페이지의 카테고리와 같은지 판단-->
-              {% assign count = count | plus: 1 %}
-              <!-- 글의 목록을 최대 3개만 허용 -->
-              {% if count < 11 %}
-                <tr>
-                  <!-- 각 포스트의 링크도 자신의 사이트에 맞게 수정 -->
-                  <td class="more-posts-date">{{ post.date | date: '%Y. %m. %d' }}</td>
-                  <th class="more-posts-title" style="border-bottom: 0px">
-                    <a href="{{ site.url }}{{ post.url }}" style="shadow: 0 0 0; text-decoration: none"> [ {{ post.categories }} ] {{ post.title }}</a>
-                  </th>
-                </tr>
+              {% if post.categories != "test" %}
+                {% assign count = count | plus: 1 %}
+                <!-- 글의 목록을 최대 3개만 허용 -->
+                {% if count < 11 %}
+                  <tr>
+                    <!-- 각 포스트의 링크도 자신의 사이트에 맞게 수정 -->
+                    <td class="more-posts-date">{{ post.date | date: '%Y. %m. %d' }}</td>
+                    <th class="more-posts-title" style="border-bottom: 0px">
+                      <a href="{{ site.url }}{{ post.url }}" style="shadow: 0 0 0; text-decoration: none"> [ {{ post.categories }} ] {{ post.title }}</a>
+                    </th>
+                  </tr>
+                {% endif %}
               {% endif %}
             {% endfor %}
           </tbody>
