@@ -23,10 +23,10 @@ $blockquote-border: $dove-grey !default;
   margin-top: 10px !important;
   display: table;
   border-spacing: 2px;
-  border-color: #b5e853; 
+  border-color: #dcdfe1; 
 }
 .more-category {
-  border-bottom: 1px solid #b5e853 !important;
+  border-bottom: 1px solid #dcdfe1 !important;
 }
 .more-category > h4 {
   line-height: 170%;
@@ -244,7 +244,7 @@ table {
 
 th {
   text-align: left;
-  border-bottom: 1px dashed #b5e853;
+  border-bottom: 1px solid #dcdfe1;
   padding: 5px 10px;
 }
 
