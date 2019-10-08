@@ -10,7 +10,7 @@ $blockquote-border: $dove-grey !default;
 
 
 .more-posts {
-  border: 1px dashed #b5e853;
+  border: 1px solid #dcdfe1;
   padding: 10px 10px 5px;
   margin: 10px 0;
   clear: both;
@@ -30,7 +30,7 @@ $blockquote-border: $dove-grey !default;
 }
 .more-category > h4 {
   line-height: 170%;
-  color: #737373 !important;
+  color: #dcdfe1 !important;
   font-size: 12px;
   margin: 0;
   padding: 2px 0 6px !important;
@@ -38,7 +38,7 @@ $blockquote-border: $dove-grey !default;
 }
 .more-category .more-button {
   float: right;
-  color: #909090;
+  color: #eceff1;
   font-size: 12px !important;
   vertical-align: center;
   border-collapse: collapse;
@@ -57,17 +57,18 @@ $blockquote-border: $dove-grey !default;
   border-collapse: collapse;
 }
 .more-posts-title a {
-  color: #909090;
+  color: #eceff1 ;
+  text-decoration: none;
 }
 .more-posts-title a:hover {
-  color: #34373e;
+  color: #cfd8dc ;
 }
 .more-posts-date {
   text-align: right;
   width: 80px;
   font-size: 11px;
   padding: 0 0 4px !important;
-  color: #909090 !important;
+  color: #eceff1 !important;
   display: table-cell;
   vertical-align: inherit;
   border-collapse: collapse;
