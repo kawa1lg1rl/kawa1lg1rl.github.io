@@ -40,16 +40,31 @@ s.setAttribute('data-timestamp', +new Date());
 <script>
      
     (function(){
+      
+    function setContentsLeft(x) {
+      if (x.matches) { // If media query matches
+        document.getElementById("main_content").style.left = "300px"
+      } else 
+      {
+        document.getElementById("main_content").style.left = "calc(25% + 50px)"
+      }
+    }
+
+    var x = window.matchMedia("(max-width: 1000px)")
+    myFunction(x) 
+    x.addListener(myFunction) 
       // 메인컨텐츠 가져와서 헤딩태그 수집
       var main_contents = document.getElementById("main_content")
       var allHeadings = main_contents.querySelectorAll("h1, h2, h3, h4, h5, h6")
       var nicknameView = document.getElementsByClassName("view")[0]
-      
+      var customContainer = document.getElementsByClassName("custom_container")[0]
+
+
       // 메인컨텐츠에 헤딩이 1개이상일때(제목빼고 더 있을때)
       if( allHeadings.length > 1 ) {
         // 목차 추가
         var temp_main = document.createElement("div")
-        nicknameView.after(temp_main)
+        customContainer.after(temp_main)
         
         var beforeName = "null"
         var nodes = new Array()
@@ -136,7 +151,7 @@ s.setAttribute('data-timestamp', +new Date());
         temp_main.style.paddingRight = "50px"
         temp_main.style.width = "25%"
 
-  
       }
     })()
+
   </script>
