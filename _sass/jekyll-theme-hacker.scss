@@ -25,7 +25,7 @@ body {
 .container {
   width: calc(75% - 50px);
   max-width: 1000px;
-  margin: 0 auto;
+  left: calc(25% + 50px)
 }
 
 .custom_index {
@@ -36,7 +36,7 @@ body {
   padding-right: 50px;
 }
 
-@media (max-width: 1000px) { 
+@media screen and (max-width: 1000px) { 
  .container {
    left: 300px;
    width: calc(100% - 300px)
