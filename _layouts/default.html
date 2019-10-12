@@ -43,6 +43,8 @@ a{
         <div class="more-category">
           
           <h4>Recent Posts</h4>
+          <a class="more-button" onClick="prevButton()">이전</a>
+          <a class="more-button" onClick="nextButton()">다음</a>
         </div>
         <table id="post_list_table" style="margin: 0 0 0 0">
           <tbody>
@@ -54,7 +56,7 @@ a{
               {% if post.categories != "test" %}
                 {% assign count = count | plus: 1 %}
               
-                <tr id="post_list_tr_{{% count %}}">
+                <tr id="post_list_tr_">
                   
                   <td class="more-posts-date">{{ post.date | date: '%Y. %m. %d' }}</td>
                   <th class="more-posts-title" style="border-bottom: 0px">
@@ -68,12 +70,66 @@ a{
       </div>
 
       <script>
-
+        
+        let startIndex = 0
+        let endIndex = 10
+        let totalIndex = 0
+        let totalTrs = null
+        
         function setPostList() {
-          var newTbody = document.createElement("tbody")
-          
+          let table = document.getElementById("post_list_table")
+          let trs = table.getElementsByTagName("tr")
 
+          let index = 0
+          for(let tr in trs) {
+            tr.id = tr.id + index
+            index = index + 1
+          }
+
+          totalIndex = index
+          totalTrs = trs
+          
+          setVisible(startIndex, endIndex)
         }
+
+        function setVisible(start, _end) {
+          let end = 0
+          if(_end >= totalIndex) { 
+            end = totalIndex
+          }
+
+          for(let i = 0; i < total; i++) {
+            if( i >= start && i < end) {
+              totalTrs[i].style.visibility = "visible"
+            } else {
+              totalTrs[i].style.visibility = "hidden"
+            }
+          }
+        }
+
+        function nextButton() {
+          if(startIndex + 10 >= totalIndex) { 
+            return 
+          } 
+          
+          startIndex += 10
+          endIndex += 10
+
+          setVisible(startIndex, endIndex)
+        }
+
+        function prevButton() {
+          if(startIndex <= 0) { 
+            return 
+          } 
+          
+          startIndex -= 10
+          endIndex -= 10
+          
+          setVisible(startIndex, endIndex)
+        }
+
+        setPostList();
       
       </script>
 
