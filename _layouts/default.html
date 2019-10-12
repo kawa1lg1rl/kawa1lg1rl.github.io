@@ -98,7 +98,7 @@ a{
             end = totalIndex
           }
 
-          for(let i = 0; i < total; i++) {
+          for(let i = 0; i < totalIndex; i++) {
             if( i >= start && i < end) {
               totalTrs[i].style.visibility = "visible"
             } else {
@@ -125,7 +125,7 @@ a{
           
           startIndex -= 10
           endIndex -= 10
-          
+
           setVisible(startIndex, endIndex)
         }
 
