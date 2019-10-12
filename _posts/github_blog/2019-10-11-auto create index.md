@@ -68,6 +68,7 @@ heading 태그를 javascript로 파싱 후, ul li 태그를 통해 목차를 만
               nodesDepth += 1
             } else {
               nodesDepth -= 1
+              nodes.pop()
             }
 
             beforeNumber = localNumber
