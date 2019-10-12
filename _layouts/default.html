@@ -44,7 +44,7 @@ a{
           <!-- 하단의 더보기의 링크는 자신의 사이트에 맞게 수정 -->
           <h4>Recent Posts</h4>
         </div>
-        <table style="margin: 0 0 0 0">
+        <table id="post_list_table" style="margin: 0 0 0 0">
           <tbody>
             <!-- if문 도는 횟수 체크하기 위해 변수 선언 -->
             {% assign count = 0 %}
@@ -54,20 +54,28 @@ a{
               {% if post.categories != "test" %}
                 {% assign count = count | plus: 1 %}
                 <!-- 글의 목록을 최대 3개만 허용 -->
-                {% if count < 11 %}
-                  <tr>
-                    <!-- 각 포스트의 링크도 자신의 사이트에 맞게 수정 -->
-                    <td class="more-posts-date">{{ post.date | date: '%Y. %m. %d' }}</td>
-                    <th class="more-posts-title" style="border-bottom: 0px">
-                      <a href="{{ site.url }}{{ post.url }}" style="shadow: 0 0 0; text-decoration: none"> [ {{ post.categories }} ] {{ post.title }}</a>
-                    </th>
-                  </tr>
-                {% endif %}
+                <tr id="post_list_tr_{% count %}">
+                  <!-- 각 포스트의 링크도 자신의 사이트에 맞게 수정 -->
+                  <td class="more-posts-date">{{ post.date | date: '%Y. %m. %d' }}</td>
+                  <th class="more-posts-title" style="border-bottom: 0px">
+                    <a href="{{ site.url }}{{ post.url }}" style="shadow: 0 0 0; text-decoration: none"> [ {{ post.categories }} ] {{ post.title }}</a>
+                  </th>
+                </tr>
               {% endif %}
             {% endfor %}
           </tbody>
         </table>
       </div>
+
+      <script>
+
+        function setPostList() {
+          var newTbody = document.createElement("tbody")
+          
+
+        }
+      
+      </script>
 
     {% if site.google_analytics %}
       <script>
