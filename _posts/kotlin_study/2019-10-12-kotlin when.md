@@ -22,7 +22,6 @@ when(x) {
     in 5..10 -> println("5~10")
     else -> println("else")
 }
-
 ```
 
 switch와 if를 섞은것처럼 사용
