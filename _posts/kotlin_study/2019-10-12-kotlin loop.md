@@ -47,10 +47,9 @@ c나 java와 같다
 ## Label을 이용한 Loop Break
 라벨을 이용하면 break시 원하는 블록을 지정할 수 있다.(return, continue도 가능.)
 ```kotlin
-
-@first fun(i in 1..9) {
+@first for(i in 1..9) {
     println(i)
-    @second fun(j in 1..9) {
+    @second for(j in 1..9) {
         if(i > 4 ) break@first
     }
 }
