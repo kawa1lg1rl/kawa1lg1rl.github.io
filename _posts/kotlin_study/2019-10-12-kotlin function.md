@@ -4,7 +4,7 @@ title: Kotlin 함수
 categories: kotlin_study
 comments: true
 tags: kotlin function
-date: 2019-10-09
+date: 2019-10-12
 author: kawa1lg1rl
 ---
 
