@@ -80,13 +80,12 @@ a{
           let table = document.getElementById("post_list_table")
           let trs = table.getElementsByTagName("tr")
 
-          let index = 0
-          for(let tr in trs) {
+          
+          for(let index = 0; index < trs.length; index ++) {
             tr.id = "post_tr" + index
-            index = index + 1
           }
 
-          totalIndex = index
+          totalIndex = trs.length
           totalTrs = trs
           
           setVisible(startIndex, endIndex)
