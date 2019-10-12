@@ -56,7 +56,7 @@ a{
               {% if post.categories != "test" %}
                 {% assign count = count | plus: 1 %}
               
-                <tr id="post_list_tr_">
+                <tr>
                   
                   <td class="more-posts-date">{{ post.date | date: '%Y. %m. %d' }}</td>
                   <th class="more-posts-title" style="border-bottom: 0px">
@@ -82,7 +82,7 @@ a{
 
           let index = 0
           for(let tr in trs) {
-            tr.id = tr.id + index
+            tr.id = "post_tr" + index
             index = index + 1
           }
 
