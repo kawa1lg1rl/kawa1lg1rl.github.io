@@ -90,6 +90,7 @@ s.setAttribute('data-timestamp', +new Date());
               nodes.push(newUl)
               nodesDepth += 1
             } else {
+              nodes.pop()
               nodesDepth -= 1
             }
 
