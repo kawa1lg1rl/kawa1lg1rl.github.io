@@ -27,7 +27,7 @@ when(x) {
 switch와 if를 섞은것처럼 사용
 ```kotlin 
 var a = 50
-when() {
+when {
     a <= 10 -> println("a <= 10")
     else -> println("a > 10")
 }
