@@ -52,17 +52,14 @@ a{
             {% assign count = 0 %}
             {% assign work_items = site.posts | sort: 'date' | reverse %}
             {% for post in work_items %}
-              {% if post.category == "test" %}
-              {% else %}
-                {% assign count = count | plus: 1 %}
-                <tr>
-                  <td class="more-posts-date">{{ post.date | date: '%Y. %m. %d' }}</td>
-                  <th class="more-posts-title" style="border-bottom: 0px">
-                    <a href="{{ site.url }}{{ post.url }}" style="shadow: 0 0 0; text-decoration: none">
-                      [ {{ post.categories }} ] {{ post.title }}</a>
-                  </th>
-                </tr>
-              {% endif %}
+              {% assign count = count | plus: 1 %}
+              <tr>
+                <td class="more-posts-date">{{ post.date | date: '%Y. %m. %d' }}</td>
+                <th class="more-posts-title" style="border-bottom: 0px">
+                  <a href="{{ site.url }}{{ post.url }}" style="shadow: 0 0 0; text-decoration: none">
+                    [ {{ post.categories }} ] {{ post.title }}</a>
+                </th>
+              </tr>
             {% endfor %}
           </tbody>
         </table>
