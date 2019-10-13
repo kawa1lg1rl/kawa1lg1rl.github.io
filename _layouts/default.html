@@ -53,8 +53,6 @@ a{
             {% assign work_items = site.posts | sort: 'date' | reverse %}
             {% for post in work_items %}
               {% if post.categories == "test" %}
-              {% endif %}
-
               {% else %}
                 {% assign count = count | plus: 1 %}
                 <tr>
