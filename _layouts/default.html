@@ -43,8 +43,8 @@ a{
         <div class="more-category">
           
           <h4>Recent Posts</h4>
-          <a class="more-button" onClick="prevButton()">이전</a>
           <a class="more-button" onClick="nextButton()">다음</a>
+          <a class="more-button" onClick="prevButton()">이전</a>
         </div>
         <table id="post_list_table" style="margin: 0 0 0 0">
           <tbody>
@@ -82,7 +82,7 @@ a{
 
           
           for(let index = 0; index < trs.length; index ++) {
-            tr.id = "post_tr" + index
+            trs[index].id = "post_tr" + index
           }
 
           totalIndex = trs.length
