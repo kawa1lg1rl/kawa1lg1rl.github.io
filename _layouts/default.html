@@ -92,7 +92,7 @@ a{
         }
 
         function setVisible(start, _end) {
-          let end = 0
+          let end = _end
           if(_end >= totalIndex) { 
             end = totalIndex
           }
@@ -101,7 +101,7 @@ a{
             if( i >= start && i < end) {
               totalTrs[i].style.visibility = "visible"
             } else {
-              totalTrs[i].style.visibility = "hidden"
+              totalTrs[i].style.visibility = "none"
             }
           }
         }
