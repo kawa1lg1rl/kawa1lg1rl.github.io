@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Kotlin Super This
+title: Kotlin Destructuring
 categories: kotlin_study
 comments: true
-tags: kotlin 
-date: 2019-10-13
+tags: kotlin destructuring
+date: 2019-10-14
 author: kawa1lg1rl
 ---
 
