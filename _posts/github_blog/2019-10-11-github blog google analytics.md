@@ -13,8 +13,6 @@ markdown 과 ruby를 이용하여 블로그를 운영할 수 있는 Jekyll이라
 정적으로 운영이 가능하다.
 
 Jekyll은 Github에서 지원해준다. 따라서 Github에 Jekyll을 검색하면  
-Jekyll을 이용한 사이트 테마들이 나온다.   
-
 나는 jekyll-theme-hacker를 사용하기로 했다.
 
 ### 테마를 적용한 개설 방법
@@ -32,6 +30,8 @@ theme: jekyll-theme-hacker
 `https://nickname.github.io`로 들어가 메인페이지를 확인할 수 있다.  
 
 하지만 나는 커스터마이징을 하려고 찾아보다보니 jekyll-theme-hacker 저장소를 받아서 사용하는게 더 편할거같아서 받아서 사용하고 있다.
+
+~~remote-theme을 통해 자동으로 다운받아준다고 한다. 안되는 테마도 있다고..~~
 
 
 ### Google Analytics
@@ -60,7 +60,6 @@ theme: jekyll-theme-hacker
 disqus_url: https://kawa1lg1rls-github-blog.disqus.com
 disqus_name: kawa1lg1rls-github-blog
 ```
-
 ## .
 Disqus와 Google Analytics 둘 다 javascript 코드를 제공해준다.  
 해당 코드를 default.html과 같은 필요한 곳에 입력하기만 하면 연동이 끝난다.
