@@ -132,7 +132,8 @@ fun test(): List<Int>?{
     temp = temp!!.plus(5)
     return temp
 }
-```
+```  
+  
 ```kotlin
 /*
 * - output - 
