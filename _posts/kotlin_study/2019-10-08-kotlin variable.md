@@ -113,6 +113,7 @@ b = null // Error
 ### Non-null assertion, Safe call
 `null`을 넣을 수 있는 변수를 사용 시, `!!`과 `?`을 이용할 수 있다.  
 > `!!`(non-null assertion)을 이용하는 경우  
+  
 ```kotlin
 fun main(args: Array<String>) {
     var a = test()
