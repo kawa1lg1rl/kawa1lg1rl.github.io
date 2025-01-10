@@ -8,5 +8,29 @@ aux_links:
   Nyan: https://youtu.be/2yJgwwDcgV8
 
 color_scheme: dark
+
 ga_tracking: G-W7F1JV8VX6
 ga_tracking_anonymize_ip: true 
+
+collections:
+  # Define a collection named "tests", its documents reside in the "_tests" directory
+  tests:
+    permalink: "/:collection/:path/"
+    output: true
+  
+  posts:
+    permalink: "/:collection/:path/"
+    output: true
+
+just_the_docs:
+  # Define which collections are used in just-the-docs
+  collections:
+    # Reference the "tests" collection
+    tests:
+      # Give the collection a name
+      name: Tests
+      nav_fold: true
+    posts:
+      name: Posts
+      nav_fold: false
+      
