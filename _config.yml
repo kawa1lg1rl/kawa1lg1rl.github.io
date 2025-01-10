@@ -9,6 +9,14 @@ aux_links:
 
 color_scheme: dark
 
+gh_edit_link: false # show or hide edit this page link
+gh_edit_link_text: "Edit this page on GitHub"
+gh_edit_repository: "https://github.com/just-the-docs/just-the-docs" # the github URL for your repo
+gh_edit_branch: "main" # the branch that your docs is served from
+# gh_edit_source: docs # the source that your files originate from
+gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
+
+
 ga_tracking: G-W7F1JV8VX6
 ga_tracking_anonymize_ip: true 
 
@@ -18,10 +26,6 @@ collections:
     permalink: "/:collection/:path/"
     output: true
   
-  posts:
-    permalink: "/:collection/:path/"
-    output: true
-
 just_the_docs:
   # Define which collections are used in just-the-docs
   collections:
@@ -30,7 +34,4 @@ just_the_docs:
       # Give the collection a name
       name: Tests
       nav_fold: true
-    posts:
-      name: Posts
-      nav_fold: false
       
