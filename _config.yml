@@ -1,8 +1,12 @@
-title: Just the Docs Template
-description: A starter template for a Jeykll site using the Just the Docs theme!
+title: kawa1lg1rl's blog
+description: 
 theme: just-the-docs
 
 url: https://just-the-docs.github.io
 
 aux_links:
-  Template Repository: https://github.com/just-the-docs/just-the-docs-template
+  Nyan: https://youtu.be/2yJgwwDcgV8
+
+color_scheme: dark
+ga_tracking: G-W7F1JV8VX6
+ga_tracking_anonymize_ip: true 
